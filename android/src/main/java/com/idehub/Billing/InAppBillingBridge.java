@@ -97,9 +97,9 @@ public class InAppBillingBridge extends ReactContextBaseJavaModule implements Ac
     }
 
     @ReactMethod
-    public void loadOwnedPurchasesFromGoogle(final Promise promise){
+    public void loadOwnedPurchasesFromCaffeBazaar(final Promise promise){
       if (bp != null) {
-          bp.loadOwnedPurchasesFromGoogle();
+          bp.loadOwnedPurchasesFromCaffeBazaar();
           promise.resolve(true);
       } else {
           promise.reject("EUNSPECIFIED", "Channel is not opened. Call open() on InAppBilling.");

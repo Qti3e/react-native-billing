@@ -99,7 +99,7 @@ public class BillingProcessor extends BillingBase
 		{
 			if (!isPurchaseHistoryRestored())
 			{
-				loadOwnedPurchasesFromGoogle();
+				loadOwnedPurchasesFromCaffeBazaar();
 				return true;
 			}
 			return false;
@@ -312,7 +312,7 @@ public class BillingProcessor extends BillingBase
 	 *
 	 * @return {@code true} if all retrievals are successful, {@code false} otherwise
 	 */
-	public boolean loadOwnedPurchasesFromGoogle()
+	public boolean loadOwnedPurchasesFromCaffeBazaar()
 	{
 		return loadPurchasesByType(Constants.PRODUCT_TYPE_MANAGED, cachedProducts) &&
 			   loadPurchasesByType(Constants.PRODUCT_TYPE_SUBSCRIPTION, cachedSubscriptions);
@@ -687,7 +687,7 @@ public class BillingProcessor extends BillingBase
 				{
 					if (!isPurchased(productId) && !isSubscribed(productId))
 					{
-						loadOwnedPurchasesFromGoogle();
+						loadOwnedPurchasesFromCaffeBazaar();
 					}
 					TransactionDetails details = getPurchaseTransactionDetails(productId);
 					if (!checkMerchant(details))

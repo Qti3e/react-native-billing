@@ -419,8 +419,8 @@ InAppBilling.getSubscriptionTransactionDetails('your.inapp.productid')
 });
 ```
 
-### loadOwnedPurchasesFromGoogle()
+### loadOwnedPurchasesFromCaffeBazaar()
 Refreshes the internal purchases & subscriptions status cache.
 ```javascript
-InAppBilling.loadOwnedPurchasesFromGoogle().then(...);
+InAppBilling.loadOwnedPurchasesFromCaffeBazaar().then(...);
 ```

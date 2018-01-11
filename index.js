@@ -11,8 +11,8 @@ class InAppBilling {
       return InAppBillingBridge.close();
     }
 
-    static loadOwnedPurchasesFromGoogle() {
-        return InAppBillingBridge.loadOwnedPurchasesFromGoogle();
+    static loadOwnedPurchasesFromCaffeBazaar() {
+        return InAppBillingBridge.loadOwnedPurchasesFromCaffeBazaar();
     }
 
     static purchase(productId, developerPayload = null) {

@@ -1,6 +1,6 @@
 {
   "name": "react-billing-caffebazaar",
-  "version": "2.4.0",
+  "version": "3.0.0",
   "description": "React Native bridge for Caffebazaar's InApp Billing on Android",
   "main": "index.js",
   "scripts": {
