@@ -1,14 +1,14 @@
 {
-  "name": "react-native-billing",
+  "name": "react-billing-caffebazaar",
   "version": "2.4.0",
-  "description": "React Native bridge for InApp Billing on Android",
+  "description": "React Native bridge for Caffebazaar's InApp Billing on Android",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idehub/react-native-billing.git"
+    "url": "git+https://github.com/Qti3e/react-native-billing-cafebazaar.git"
   },
   "keywords": [
     "react",
@@ -18,14 +18,15 @@
     "purchase",
     "react-native",
     "android",
-    "bridge"
+    "bridge",
+    "caffebazaar"
   ],
-  "author": "Idéhub AS",
+  "author": "Parsa Ghadimi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/idehub/react-native-billing/issues"
+    "url": "https://github.com/Qti3e/react-native-billing-cafebazaar/issues"
   },
-  "homepage": "https://github.com/idehub/react-native-billing#readme",
+  "homepage": "https://github.com/Qti3e/react-native-billing-cafebazaar#readme",
   "rnpm": {
     "android": {
       "packageInstance": "new InAppBillingBridgePackage()"
